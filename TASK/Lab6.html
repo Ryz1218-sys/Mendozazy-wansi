@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>css</title>
+  <Style>
+  body{
+    Margin:20px;
+  }
+  
+    #Name{
+      display:block;
+      margin-bottom:10px;
+      padding:8px;
+      width:175px;
+      border:1px solid;
+    }
+    
+    #Button{
+      display:inline-block;
+      width:200px;
+      vertical-align:middle;
+    }
+    
+    #Pics{
+      text-align: center;
+      padding:50px;
+      border:1px solid;
+    }
+    
+     
+    .SU {
+      max-width: 300px;
+      padding: 20px;
+      border: 1px solid ;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    .FNS {
+      display: flex;
+      gap: 10px;
+      
+    }
+
+     input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    .signup {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+      
+    #Ride{
+      display:block;
+      margin-bottom:10px;
+      padding:30px;
+      width:250px;
+      border:1px solid;
+
+      .box{
+        background:rgb(176, 174, 174);
+
+      }
+      
+      .RQ{
+      display:inline-block;
+      color:white;
+      background:black;
+      
+      }
+       .RQ1{
+      display:inline-block;
+      background:grey;
+    }
+    }
+  </Style>
+</head>
+<body>
+  <div id="Name">
+    <input type="text" placeholder="Name" name="Name">
+    <input type="text" placeholder="Email" name="Email">
+  </div>
+  
+  <p id=Button>Thank you for chatting with our customer support. Would you like to take our quick survey?</p>
+  <button>Yes</button>
+  <button>No</button>
+  
+  <div id=Pics>
+  <img src="/image/Google1.webp" width="250px" >
+  <br>
+  <input type="text" placeholder="Search Google or type URL" name="Google">
+  </div>
+  
+  <br>
+  
+  <h2>SIGN UP FORM</h2>
+  <div class="SU">
+    <div class="FNS">
+        <input type="text" placeholder="First name" name="Name">
+        <input type="text" placeholder="Surname" name="Name">
+    </div>
+
+    <div class="Mail">
+        <input type="text" placeholder="Email" name="Email"></td>
+    </div>
+    <button class="signup">Sign Up</button>
+  </div>
+
+  <div id="Ride">
+  <h2>REQUEST A RIDE NOW</h2>
+    <input type="text" placeholder="Enter pickup location" name="Name">
+    <input type="text" placeholder="Enter destination" name="Name">
+      <button class=RQ>Request now</button>
+      <button class=RQ1>Schedule for later</button>
+    
+  </div>
+</body>
