@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Menu ul{
+            list-style: none;
+            display:flex;
+            flex-direction: column;
+            padding:0;
+            margin:0;
+            overflow: hidden;
+            width:120px;
+        }
+        
+        #Menu li a {
+            display: block;
+            border:2px solid #b9936c;
+            color:black;
+            background: #c4b7a6;
+            text-align: center;
+            margin:5px;
+            padding:8px;
+            border-radius: 50px;
+        }
+        
+        #Menu li a:hover{
+            background: #dac292;
+        }
+        
+        #Menu li a:active{
+            background: #7e4a35;
+        } 
+
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            margin-top:0px;
+            background: #e6e2d3;
+        }
+    
+    
+        header{
+            background-color:#b9936c;
+            padding: 1px;
+            height:100px ;
+            border-radius: 10px;
+            text-align: center;
+            color:white;
+        }
+
+        main{
+            height:300px
+        }
+        
+        aside{
+            width:15%;
+            float:left;
+            margin:0;
+            height:300px;
+        }
+        
+        
+        
+        section{
+            width:65%;
+            float:left;
+            margin:0;
+            height:200px;
+        }
+        
+        article{
+            width:19%;
+            float:left;
+            margin:0;
+            height:300px;
+            border: 2px solid #b9936c;
+            background: #dac292;
+            margin-top: 5px;
+        }
+
+        footer{
+            margin:0 auto;
+            max-width: 100%;
+            background:#c4b7a6;
+            border: 2px solid #b9936c;
+            text-align: center;
+            padding: 5px;
+            margin-top:10px;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+
+        @media screen and (max-width:800px){
+            aside, section, article{
+                width: 100%;
+            }
+        }
+            
+        
+
+       
+       
+    
+      
+        
+    </style>
+</head>
+<body>
+    <header>
+    <h2>Welcome to My Homepage</h2>
+     <h7>Use the menu to select different Stylesheets</h7>
+    </header>
+    
+    <main>
+    <aside>
+    <nav id="Menu">
+    <ul>
+        <li><a herf = "#S1">Stylesheet 1</a></li>
+        <li><a herf = "#S2">Stylesheet 2</a></li>
+        <li><a herf = "#S3">Stylesheet 3</a></li>
+        <li><a herf = "#S4">Stylesheet 4</a></li>
+        <li><a herf = "#S5">Stylesheet 5</a></li>
+    </ul>
+    </nav>
+    </aside>
+    
+    <section>
+    <h2>Same Page Different Style</h2>
+    <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+    <p>Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.</p>
+    
+    
+    <h3>No Styles</h3>
+    <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+    No Stylesheet.</p>
+   </section>
+
+    <article>
+    <h4>Side-Bar</h4>    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quidem, neque illo at quasi dolore odio ut voluptates asperiores nobis et! Voluptatum magni facere optio sunt sapiente ullam non eos.</p>
+    </article>
+    </main>
+    
+    <footer>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, esse eius, vero illum voluptatum doloribus repellat odit voluptates rerum veritatis iste quas incidunt numquam sint tempore eaque laborum obcaecati debitis!lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae omnis tempora eveniet esse quia voluptates porro, autem reprehenderit! Accusantium eaque, fugit et sed unde ex nisi illum mollitia ullam?</p>
+    </footer>
+</body>
+</html>
