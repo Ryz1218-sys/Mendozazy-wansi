@@ -1,0 +1,150 @@
+
+body{
+   margin-top: 10px;
+    background:white;
+}
+
+.Title{
+    font-style: italic;
+    text-align: center;
+    color: #9B8EC7;
+}
+
+img{
+    border-radius:10% ;
+    
+}
+
+header{
+    display:flex;
+    gap:10px;
+    border: 2px solid #9B8EC7;
+    border-radius:3%;
+    background: #BDA6CE;
+    width:750px;
+    height: 200px;
+    padding:50px;
+    margin: auto;
+}
+
+#AboutMe, #Ilove, #funfact, #skills {
+    width: 1250px;
+    margin: auto;
+    border:2px solid #9B8EC7;
+    border-radius:20px;
+    background: #BDA6CE;
+    margin-top: 50px;
+    padding:10px;
+}
+
+#Educ ul {
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+    width:600px;
+}
+
+#Educ li{
+    display: block;
+    border:2px solid #9B8EC7;
+    color:black;
+    background: #BDA6CE;
+    text-align: left;
+    margin:5px;
+    padding:8px;
+    border-radius: 50px;
+    width: 500px;
+    
+}
+
+#Educ h2{
+    color: #9B8EC7;
+}
+
+#Educ{
+    width: 1250px;
+    margin: auto;
+    border:2px solid #9B8EC7;
+    border-radius:20px;
+    padding:10px;
+    margin-top: 50px;
+    list-style: none;
+}
+
+#lang, #contact{
+    width: 1250px;
+    margin: auto;
+    border:2px solid #9B8EC7;  
+    border-radius:20px;
+    padding:10px;
+    margin-top: 50px;
+    list-style: none;
+}
+
+#Porjects li,#Finals li{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+    width:600px;
+}
+
+#Porjects li a,#Finals li a{
+    display: block;
+    border:2px solid #9B8EC7;
+    color:black;
+    background: #BDA6CE;
+    text-align: left;
+    margin:5px;
+    padding:8px;
+    border-radius: 50px;
+    width: 150px;
+}
+
+#Porjects a:link,#Finals a:link{
+    background: #BDA6CE;
+
+}
+#Porjects a:hover,#Finals a:hover{
+    background: #9B8EC7;
+}
+
+#Porjects a:visited,#Finals a:visited{
+    background: #775192;
+    
+}
+        
+#Porjects a:active,#Finals a:active{
+    background: violet;
+} 
+
+
+#tasks{
+    display:flex;
+    gap: 10px;
+    margin:auto;
+    width: 1250px;
+    border:2px solid #9B8EC7;
+    background-color: #BDA6CE;
+    border-radius:20px;
+    padding:10px;
+    margin-top: 50px;
+    list-style: none;
+    
+
+}
+#Porjects,#Finals {
+    width: 300px;
+    border:2px solid #9B8EC7;
+    background: white;
+    border-radius:20px;
+    padding:10px;
+    margin-top: 50px;
+    list-style: none;
+}
+
