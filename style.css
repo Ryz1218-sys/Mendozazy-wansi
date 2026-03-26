@@ -33,7 +33,7 @@ header{
     border:2px solid #9B8EC7;
     border-radius:20px;
     background: #BDA6CE;
-    margin-top: 50px;
+    margin-top: 10px;
     padding:10px;
 }
 
@@ -70,7 +70,7 @@ header{
     border:2px solid #9B8EC7;
     border-radius:20px;
     padding:10px;
-    margin-top: 50px;
+    margin-top: 10px;
     list-style: none;
 }
 
@@ -80,7 +80,7 @@ header{
     border:2px solid #9B8EC7;  
     border-radius:20px;
     padding:10px;
-    margin-top: 50px;
+    margin-top: 10px;
     list-style: none;
 }
 
@@ -133,7 +133,8 @@ header{
     background-color: #BDA6CE;
     border-radius:20px;
     padding:10px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     list-style: none;
     
 
