@@ -2,78 +2,113 @@
   <head>
     <title></title>
     <style>
-    #navbar ul {
-        list-style-type: none;
-        margin:0;
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+     #navbar ul {
+        list-style: none;
+        display:flex;
+        flex-direction: rows;
         padding:0;
-        overflow:hidden;
-        background-color:hotpink;
+        margin:0;
+        overflow: hidden;
+        background-color: #367588;
       }
-      
       #navbar li{
-        float: left;
+        padding: 10px;
+
       }
-      
       #navbar li a{
-        display:block;
         color:black;
         text-align: center;
-        padding: 16px;
+        margin: auto;
         text-decoration: none;
       }
-        
+      
       #navbar li a:hover {
-        background: blueviolet;
+        background:#004170 ;
+        border:1px solid;
+        border-radius: 60px;
+        padding: 5px;
+       
       }
-      #navbar2 ul{
+
+      #navbar li a:visited{
+        background: #00428c;
+
+      }
+
+      #navbar2 ul {
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding:0;
+        margin:0 ;
+      }
+
+      #navbar2 li a {
+        color: black;
         display: block;
+        text-decoration: none;
+        text-align: center;
+        margin: 5px;
+        border-radius: 50px;
+        width: 100px;
       }
-    
+
+      #navbar2 li a:link{
+        background:#367588;
+      }
+      #navbar2 li a:hover{
+        background:#004170;
+      }
+
       body{
         margin-top:0px;
       }
       
       header{
-        background-color:bisque;
-        height: 100px;
+        background-color:#005f69;
         text-align: center;
-        padding:10px;
+        padding: 10px;
+        
       }
       
       nav{
-        background-color:lightcoral;
-        height: 30px;
+        background:lightgrey;
+        
+        padding: 10px;
+        
       }
       
       main{
-        background-color: lightpink;
+        background-color: lightgrey;
         height:300px;
+        color:black;
       }
       
-      aside{
-        background-color: lightpink;
-        width:33%;
+      aside,section, article{
+        background-color: #008E97;
+        border-bottom: 3px solid;
+        border-left: 3px solid;
+        border-radius: 15px;
+        padding: 10px;
+        padding-right: 10px;
+        width:32%;
         float:left;
-        margin:0px;
-        height: 300px;
-      }
-      
-      section, #article{
-        background-color: lightpink;
-        width:33%;
-        float:left;
-        margin:0px;
+        height: 150px;
       }
       
       footer{
-        background-color: bisque;
-        height: 100px;
+        background-color:#005f69;
+        color: black;
         text-align: center;
-        padding:10px;
+        padding: 10px;
       }
-      
-      
-        
         
      @media screen and (max-width:800px){
         aside, section, article {
@@ -84,13 +119,13 @@
     </style>
   </head>
   <body>
-    <header><h2>This is a header</h2></header>
+    <header><h2>This is a Header</h2></header>
     <nav id="navbar">
       <ul>
-        <li><a href="#home"></a>Home</li>
-        <li><a href="#news"></a>News</li>
-        <li><a href="#contact"></a>Contact</li>
-        <li><a href="#about"></a>About</li>
+        <li><a href="#home"</a>Home</li>
+        <li><a href="#news"</a>News</li>
+        <li><a href="#contact"</a>Contact</li>
+        <li><a href="#about"</a>About</li>
       </ul>
     </nav>
     
@@ -103,24 +138,25 @@
       </ul>
     </nav>
       
-    
-    
     <main>
-      <aside>una Ang deskriptibong teorya  mula sa pangalan nito na deskripto ito ay tumtutukoy sa paglalarawan ng teknolohiya .Ito nakafocus sa pag-unawa kung paano nagbago .”
+      <aside>
+        Una ang deskriptibong teorya  mula sa pangalan nito na deskripto ito ay tumtutukoy sa paglalarawan ng teknolohiya .Ito nakafocus sa pag-unawa kung paano nagbago .”
       </aside>
       
       <section>
-        Una Ang deskriptibong teorya  mula sa pangalan nito na deskripto ito ay tumtutukoy sa paglalarawan ng teknolohiya .Ito nakafocus sa pag-unawa kung paano nagbago ang teknolohiya at ano ang naging epekto nito sa ating pamumuhay.”
+        Una ang deskriptibong teorya  mula sa pangalan nito na deskripto ito ay tumtutukoy sa paglalarawan ng teknolohiya .Ito nakafocus sa pag-unawa kung paano nagbago ang teknolohiya at ano ang naging epekto nito sa ating pamumuhay.”
       </section>
       
-      <article>Una Ang deskriptibong teorya  mula sa pangalan nito na deskripto ito ay tumtutukoy sa paglalarawan ng teknolohiya .Ito nakafocus sa pag-unawa kung paano nagbago ang teknolohiya at ano ang naging epekto nito sa ating pamumuhay.”
+      <article>
+        Una ang deskriptibong teorya  mula sa pangalan nito na deskripto ito ay tumtutukoy sa paglalarawan ng teknolohiya .Ito nakafocus sa pag-unawa kung paano nagbago ang teknolohiya at ano ang naging epekto nito sa ating pamumuhay.”
       </article>
     </main>
-    <footer>This is Footer</footer
+
+    <footer>
+      <h2>This is Footer</h2>
+    </footer>
  
     
   </body>
   
 </html>
-Message will disappear in: 23h
-23h
