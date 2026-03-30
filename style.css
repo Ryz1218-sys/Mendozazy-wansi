@@ -4,27 +4,25 @@ body{
     background:white;
 }
 
-.Title{
-    font-style: italic;
-    text-align: center;
-    color: #9B8EC7;
-}
-
 img{
     border-radius:10% ;
     
 }
 
 header{
-    display:flex;
+    animation:slidein 3s steps(30);
+}
+
+header{
+    display:block;
+    text-align: center;
     gap:10px;
     border: 2px solid #9B8EC7;
-    border-radius:3%;
+    border-radius:2%;
     background: #BDA6CE;
-    width:750px;
-    height: 200px;
-    padding:50px;
-    margin: auto;
+    height: 425px;
+    padding:10px;
+    margin:auto ;
 }
 
 #AboutMe, #Ilove, #funfact, #skills {
@@ -37,12 +35,13 @@ header{
     padding:10px;
 }
 
+
 #Educ ul {
     list-style: none;
     display:flex;
     flex-direction: column;
     padding:0;
-    margin:0;
+    margin:0 auto;
     overflow: hidden;
     width:600px;
 }
@@ -53,7 +52,7 @@ header{
     color:black;
     background: #BDA6CE;
     text-align: left;
-    margin:5px;
+    margin: 5px auto;
     padding:8px;
     border-radius: 50px;
     width: 500px;
@@ -65,23 +64,24 @@ header{
 }
 
 #Educ{
-    width: 1250px;
+    width: 900px;
     margin: auto;
     border:2px solid #9B8EC7;
     border-radius:20px;
     padding:10px;
     margin-top: 10px;
     list-style: none;
+    text-align:center;
 }
 
 #lang, #contact{
-    width: 1250px;
+    width: 900px;
     margin: auto;
     border:2px solid #9B8EC7;  
     border-radius:20px;
     padding:10px;
     margin-top: 10px;
-    list-style: none;
+    text-align: center;
 }
 
 #Porjects li,#Finals li{
@@ -95,6 +95,7 @@ header{
 }
 
 #Porjects li a,#Finals li a{
+    text-decoration: none;
     display: block;
     border:2px solid #9B8EC7;
     color:black;
@@ -104,6 +105,7 @@ header{
     padding:8px;
     border-radius: 50px;
     width: 200px;
+    
 }
 
 #Porjects a:link,#Finals a:link{
@@ -112,10 +114,14 @@ header{
 }
 #Porjects a:hover,#Finals a:hover{
     background: #9B8EC7;
+    width: 45%;
+    animation:glitch;
 }
+
 
 #Porjects a:visited,#Finals a:visited{
     background: #775192;
+    
     
 }
         
@@ -132,10 +138,10 @@ header{
     border:2px solid #9B8EC7;
     background-color: #BDA6CE;
     border-radius:20px;
-    padding:10px;
+    padding:15px;
     margin-top: 20px;
     margin-bottom: 20px;
-    list-style: none;
+    
     
 
 }
@@ -146,6 +152,64 @@ header{
     border-radius:20px;
     padding:10px;
     margin-top: 50px;
-    list-style: none;
+    text-decoration:none underline;
+    
+}
+
+#Ilove, #funfact, #skills,#Educ,#tasks,#lang{
+    animation:fadeUp 1s linear;
+    animation-timeline:view();   
+    animation-range:entry 0% cover 40%;
+}
+
+#Ilove, #funfact, #skills,#Educ,#tasks,#lang{
+    animation:fadeDown 1s linear;
+    animation-timeline:view();   
+    animation-range:entry 0% cover 40%;
+}
+
+
+@keyframes slidein{
+    from{
+        opacity:0;
+        transform:translate(0 px) scale(0.5);
+        
+    }
+    to{
+        opacity:1;
+        transform:translate(40 px) scale(0.5);
+    }
+}
+
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translate(40 px) scale(0.5);
+    }
+    to{
+        opacity:1;
+        transform:translate(40 px) scale(0.5);
+
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translate(40 px) scale(0.5);
+    }
+    to{
+        opacity:1;
+        transform:translate(40 px) scale(0.5);
+
+    }
+}
+
+
+ @media screen and (max-width:800px){
+    header,#AboutMe, #Ilove, #funfact, #skills,#Educ,#Educ li,#Educ ul,#tasks,#Porjects,#Finals,#Porjects li,#Finals li,#Porjects li a,#Finals li a,#lang, #contact, #IF{
+         width: 95%;
+    }
 }
 
