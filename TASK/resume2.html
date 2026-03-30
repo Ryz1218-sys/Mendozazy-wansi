@@ -8,7 +8,7 @@
         body
         {
           
-            background-color: bisque;
+            background-color: #E6E6FA;
             margin: 100px;
             font-family: Arial, Helvetica, sans-serif;
             justify-content: center;
@@ -17,42 +17,61 @@
 
         .z
         {
-          width: 250px;
+            border-radius: 60px;
             background-color: rgb(225, 202, 246);
+            padding-left: 20px;
         }
-        .y
-        {
-          width:175px;
-            background-color: rgb(225, 202, 246);
-        }
-        .r
-        {
-          width: 650px;
-            background-color: rgb(225, 202, 246);
-        }
-        .e
-        {
-          width: 210px;
-            background-color: rgb(225, 202, 246);
+        .text,.tabs{
+          border-left: 3px solid #CCCCFF;
+          border-right: 3px solid #CCCCFF;
         }
 
+        #Name h2{
+            text-align: center;
+          }
 
-        #Name
-        {
-          text-align:center;
+
+        #Name, .text,#educ,#work,#Table{
+          text-align:left;
+          margin-top: 10px;
+          padding: 10px;
+          padding-left: 20px;
           font: size 12px;
+          border-left: 3px solid #CCCCFF;
+          border-right: 3px solid #CCCCFF;
+          border-bottom:  3px solid #CCCCFF ;
+          border-radius: 10px;
+          list-style: none;
+          
         }
+
+        #educ ul{
+          list-style: none;
+          display:block;
+          padding:0;
+          margin:0;
+          overflow: hidden;
+        }
+        
+
+        #educ li {
+          border-left: 3px solid #CCCCFF;
+          border-bottom: 3px solid #CCCCFF;
+          border-radius: 60px;
+          padding: 10px;
+        }
+          
+        
+
 
         #link
         {
-           width: 700px;
-           border-radius: 40%;
-           padding: 5px;
-           margin: auto;
-           background-color: #dfbdf0;           
-          text-align:center;
-          
-          
+          position: relative;
+          padding: 15px 20px;
+          background-color:#D8BFD8;
+          border-radius: 60px;
+          text-align: center;
+
           a:link
           {
             color: rgb(130, 8, 73);
@@ -67,7 +86,9 @@
           a:hover
           {
             color: rgb(9, 58, 135);
-            text-decoration: underline;
+            border: 10px solid #BDA6CE;
+            background-color:#BDA6CE ;
+            border-radius: 60px;
           }
 
           a:active
@@ -80,14 +101,28 @@
         #Table
         {
           text-align: center;
+        
+
+          td, tr{
+            height:30px;
+          }
+
           .tabs
           {
             background-color:  rgb(198, 166, 229);
             font-size: larger;
             text-align: center;
+            margin: auto;
+          
             
           }
 
+        }
+
+        @media screen and (max-width:800px){
+          .z,#name,#link,#Table{
+            width: 100%;
+          }
         }
     </style>
 </head>
@@ -100,67 +135,75 @@
     <a href="#Exp">Experience   |</a>
     <a href="#HS">Hardware Skills   |</a>
     <a href="#SS">Software Skills</a>
-    
-  
   </div>
   <br>
-  <img src ="/TASK/zy.jpeg"width="150px"height"150px" style="border: 2px solid rgb(121, 62, 176); border-radius: 10%;display:block; margin:auto;">
 
-<div id="Name">
-  <h2>Zyrel, Mendoza Cadang</h2>
-  <p><b>Email:</b><a href ="https://mail.google.com/mail/u/0/#inbox?compose=ZtjgtNbNdGDSNQVwkcdjwqQRZsDMQdhDZShlZQjlFSmRgQkLcLKQVtcrLGsSbTtNMlnWBqJsqpmXZVLmVDSTtqGplqJgqBwsjpLzbHpCxBJvdBwGjtwXdXbSCKhtKGNHNMzPNFCqGGLKzVzplbCNhXq" target="_blank">zyrelmendoza1218@gmail.com</a>
-  <br><b>Phone:</b> +639666746933
-  <br><b>Address:</b> NHA, Telapayong ,Arayat, Pampanga
-  <br><b>Linked:</b>https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav</a></p>
-</p>
-</div>
-<hr>
+    <img src ="/TASK/zy.jpeg"width="150px"height"150px" style="border: 2px solid rgb(121, 62, 176); border-radius: 10%;display:block; margin:auto;">
+    <div id="Name">
+      <h2>Zyrel, Mendoza Cadang</h2>
+      <p><b>Email:</b><a href ="https://mail.google.com/mail/u/0/#inbox?compose=ZtjgtNbNdGDSNQVwkcdjwqQRZsDMQdhDZShlZQjlFSmRgQkLcLKQVtcrLGsSbTtNMlnWBqJsqpmXZVLmVDSTtqGplqJgqBwsjpLzbHpCxBJvdBwGjtwXdXbSCKhtKGNHNMzPNFCqGGLKzVzplbCNhXq" target="_blank">zyrelmendoza1218@gmail.com</a>
+      <br><b>Phone:</b> +639666746933
+      <br><b>Address:</b> NHA, Telapayong ,Arayat, Pampanga
+      <br><b>Linked:</b>https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav</a></p>
+    </div>
+
+
 
 
   </a>
   <dl>
     <p id="Career"></p>
   <dt><h2 class="z">Career Objectives:</h2></dt>
-  <dd> I would be able to help in achieving the company goals as a information technology. 
+  <dd class="text"> I would be able to help in achieving the company goals as a information technology. 
   I will be able to share my knowledge and my skill in order to help the company. 
   I assure that I will do well and strive to improve as I work in your company.</dd>
 </dl>
 
   
-  <h2 class="y"> Expertise Bio</h2>
-  <p>Portfolio Website,Basic html</p>
+  <h2 class="z"> Expertise Bio</h2>
+  <p class="text">Portfolio Website, System design,Software development</p>
   <p id="Educ"></p>
-  <h2 class="y">Education</h2>
-<ul type="dots">
-  <li>BSIT/PSAU/</li>
-  <li>STEM/Bloomingfields Academy Foundation.Inc/2024-2025</li>
-  <li>Bloomingfields Academy Foundation.Inc/2022-2023</li>
-</ul>
-  <p id="Exp"></p>
-  <h2 class="r">Work Experience or Seminars and Workshop Attended</h2>
-  <p>Macaron Paradise/Magalang,Pampanga/Manager/2023
-  <br>Drug Awareness/PSAU/November 31,2025</p>
+  <h2 class="z">Education</h2>
   
-  <p id="HS"></p>
-  <h2 class="e">Hardware Skills</h2>
-  <p>Internet troubleshooting, Physical installation, and Peripheral support </p>
+  <div id="educ">
+    <ul type="dots">
+      <p><b>College</b><li>Pampanga State Agriculture University (BSIT)</li></p>
+      <p><b>Senior High School</b><li>Bloomingfields Academy Foundation.Inc (2024-2025) (STEM)</li></p>
+      <p><b>Junior High School</b><li>Bloomingfields Academy Foundation.Inc (2022-2023)</li></p>
+      <p><b>Elementary School</b><li>Bloomingfields Academy Foundation.Inc </li></p>
+    </ul>
+  </div>
 
-  <p id="SS"></p>
-  <h2 class="e">Software Skills</h2>
-  <p>Programming Java, Javascript, Html,Phyton,C++, 
+  
+  <h2 class="z">Work Experience or Seminars and Workshop Attended</h2>
+  <p class="text"> <b>Manager, Macaron Paradise, Magalang, Pampanga </b>
+    <br>2023
+    <br>
+    <br><b>Training, Drug Awareness, PSAU </b>
+    <br>November 31,2025</p>
+  
+ 
+  <h2 class="z">Hardware Skills</h2>
+  <p class="text">Internet troubleshooting, Physical installation, and Peripheral support </p>
+
+
+  <h2 class="z">Software Skills</h2>
+  <p class="text">Programming Java, Javascript, Html,Phyton,C++, 
     Data management:Network security, and Operating System: Linux </p>
  
 
-  <h2 class="e">Additional Skills</h2>
+  <h2 class="z">Additional Skills</h2>
+  <ul class="text">
   <li>Time Management</li>
   <li>Multitasking</li>
   <li>Positive Attidude</li>
   <li>Patience</li>
   <li>Continuous Learning</li><li>Creativity with hand crafts</li>
+  </ul>
   
   <h2 class="z">Character Reference</h2>
  <div id="Table">
-<table border="1px" width="80%px">
+<table border="1px" width="100%" height="100%">
   
   <tr class="tabs">
     <td>Name</td>
