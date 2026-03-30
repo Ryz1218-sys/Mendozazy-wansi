@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML FORMS</title>
 </head>
+<style>
+  fieldset{
+    background-color: #5D8AA8;
+  }
+
+  input, textarea,select,button{
+    background:lightgrey;
+    border-bottom: 1px solid;
+  }
+</style>
 
 <body>
 
 <fieldset>
-    <legend><font color= blue>Request For Proposal</font></legend>
-    
-    
-    
+  <legend><font color= blue>Request For Proposal</font></legend>
+      
 <table>
   <tr>
     <td>YourCompany:</td>
@@ -30,23 +38,20 @@
   </tr>
 
   <tr>
-    
     <td>Password: </td>
-    <td> <input type= "pasword" placeholder="input password" name="pass"/> </td>      
+    <td> <input type= "password" placeholder="input password" name="pass"/> </td>      
   </tr>
  
-
-  
   <tr>
     <td>YourBusiness: </td>
     <td> <textarea placeholder="Type your business"></textarea>
   </tr>
       
-      
   <tr>
     <td> Company size: </td>
     <td><input type="radio" id="Less than 10" value "" name="size"><label>Less than 10</label></td>
   </tr>
+
   <tr> 
     <td></td>
     <td><input type="radio" id="Less than 10" value "" name="size"><label>11 to 50</label></td>
@@ -62,13 +67,11 @@
     <td><input type="radio" id="Less than 10" value "" name="size"><label>Over 200</label></td>
   </tr>
 
-      
   <tr>
     <td>Services:</td>
     <td><input type="checkbox"><label>Brand Identity</label>
         <input type="checkbox"><label>New Website</label>
         <input type="checkbox"><label>Web Redesign</label></td>
-    
   </tr>
       
   <tr>
@@ -80,18 +83,18 @@
           <option>3-6 weeks</option>
           <option>7-2 months</option>
          </select></td>
+  </tr>
+
    <tr>
        <td></td>
       <td><button>Send to Dev/Design</button></td>
   </tr>
-  
-      
-      
-  
-   
-  
 </table>
-  </form>
 </fieldset>
+
+<p>CODE</p>
+<img src="Code3.1.png" width="600px">
+<img src="code3.2.png" width="580px">
+
 </body>
 </html>
