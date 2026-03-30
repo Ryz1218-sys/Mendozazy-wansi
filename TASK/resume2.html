@@ -1,224 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <style>
-        body
-        { 
-          background-color: #E6E6FA;
-          margin: 100px;
-          font-family: Arial, Helvetica, sans-serif;
-          justify-content: center;
-          align-items: center;
-        }
+  <title>css</title>
+  <Style>
+    body{
+       Margin:20px;
+    }
+  
+    #Name{
+      display:block;
+      margin-bottom:10px;
+      padding:8px;
+      width:175px;
+      border:1px solid;
+    }
+    
+    #Button{
+      display:inline-block;
+      width:200px;
+      vertical-align:middle;
+    }
+    
+    #Pics{
+      text-align: center;
+      padding:50px;
+      border:1px solid;
+    }
+    
+    .SU {
+      max-width: 300px;
+      padding: 20px;
+      border: 1px solid ;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
 
-        .z
-        {
-          border-radius: 60px;
-          background-color: rgb(225, 202, 246);
-          padding-left: 20px;
-        }
-        
-        .text,.tabs{
-          border-left: 3px solid #CCCCFF;
-          border-right: 3px solid #CCCCFF;
-        }
+    .FNS {
+      display: flex;
+      gap: 10px; 
+    }
 
-        #Name h2{
-            text-align: center;
-          }
+     input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    
+    .signup {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+      
+    #Ride{
+      display:block;
+      margin-bottom:10px;
+      padding:30px;
+      width:250px;
+      border:1px solid;
+      
+      .box{
+        background:rgb(176, 174, 174);
+      }
+      
+      .RQ{
+      display:inline-block;
+      color:white;
+      background:black;
+      }
 
-        #Name, .text,#educ,#work,#Table{
-          text-align:left;
-          margin-top: 10px;
-          padding: 10px;
-          padding-left: 20px;
-          font: size 12px;
-          border-left: 3px solid #CCCCFF;
-          border-right: 3px solid #CCCCFF;
-          border-bottom:  3px solid #CCCCFF ;
-          border-radius: 10px;
-          list-style: none;
-        }
-
-        #educ ul{
-          list-style: none;
-          display:block;
-          padding:0;
-          margin:0;
-          overflow: hidden;
-        }
-        
-        #educ li {
-          border-left: 3px solid #CCCCFF;
-          border-bottom: 3px solid #CCCCFF;
-          border-radius: 60px;
-          padding: 10px;
-        }
-          
-        #link{
-          position: relative;
-          padding: 15px 20px;
-          background-color:#D8BFD8;
-          border-radius: 60px;
-          text-align: center;
-
-          a:link{
-            color: rgb(130, 8, 73);
-            text-decoration: none;
-          }
-
-          a:visited{
-            color: rgb(133, 62, 141);
-          }
-          
-          a:hover{
-            color: rgb(9, 58, 135);
-            border: 10px solid #BDA6CE;
-            background-color:#BDA6CE ;
-            border-radius: 60px;
-          }
-
-          a:active{
-            color: rgb(250, 248, 250);
-          }
-        }
-
-        #Table{
-          text-align: center;
-          
-          td, tr{
-            height:30px;
-          }
-
-          .tabs
-          {
-            background-color:  rgb(198, 166, 229);
-            font-size: larger;
-            text-align: center;
-            margin: auto;
-          }
-        }
-
-        @media screen and (max-width:800px){
-          .z,#name,#link,#Table{
-            width: 100%;
-          }
-        }
-    </style>
+      .RQ1{
+      display:inline-block;
+      background:grey;
+      }
+    }
+  </Style>
 
 </head>
 <body>
-<p id="top"></p>
- <div id="link">
-  <a href="#baba"style="text-decoration: underline;">Go to bottom   |</a>
-    <a href="#Career" >Summary   |</a>
-    <a href="#Educ">Education   |</a>
-    <a href="#Exp">Experience   |</a>
-    <a href="#HS">Hardware Skills   |</a>
-    <a href="#SS">Software Skills</a>
+  <div id="Name">
+    <input type="text" placeholder="Name" name="Name">
+    <input type="text" placeholder="Email" name="Email">
   </div>
+  
+  <p id=Button>Thank you for chatting with our customer support. Would you like to take our quick survey?</p>
+  <button>Yes</button>
+  <button>No</button>
+  
+  <div id=Pics>
+    <img src="/image/Google1.webp" width="250px" >
+    <br>
+    <input type="text" placeholder="Search Google or type URL" name="Google">
+  </div>
+  
   <br>
-
-    <img src ="zy.jpeg"width="150px"height"150px" style="border: 2px solid rgb(121, 62, 176); border-radius: 10%;display:block; margin:auto;">
-    <div id="Name">
-      <h2>Zyrel, Mendoza Cadang</h2>
-      <p><b>Email:</b><a href ="https://mail.google.com/mail/u/0/#inbox?compose=ZtjgtNbNdGDSNQVwkcdjwqQRZsDMQdhDZShlZQjlFSmRgQkLcLKQVtcrLGsSbTtNMlnWBqJsqpmXZVLmVDSTtqGplqJgqBwsjpLzbHpCxBJvdBwGjtwXdXbSCKhtKGNHNMzPNFCqGGLKzVzplbCNhXq" target="_blank">zyrelmendoza1218@gmail.com</a>
-      <br><b>Phone:</b> +639666746933
-      <br><b>Address:</b> NHA, Telapayong ,Arayat, Pampanga
-      <br><b>Linked:</b>https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav</a></p>
+  
+  <h2>SIGN UP FORM</h2>
+  <div class="SU">
+    <div class="FNS">
+      <input type="text" placeholder="First name" name="Name">
+      <input type="text" placeholder="Surname" name="Name">
     </div>
 
-  <dl>
-    <p id="Career"></p>
-  <dt><h2 class="z">Career Objectives:</h2></dt>
-  <dd class="text"> I would be able to help in achieving the company goals as a information technology. 
-  I will be able to share my knowledge and my skill in order to help the company. 
-  I assure that I will do well and strive to improve as I work in your company.</dd>
-</dl>
+    <div class="Mail">
+      <input type="text" placeholder="Email" name="Email"></td>
+    </div>
 
-  <h2 class="z"> Expertise Bio</h2>
-  <p class="text">Portfolio Website, System design,Software development</p>
-  <p id="Educ"></p>
-  <h2 class="z">Education</h2>
-  
-  <div id="educ">
-    <ul type="dots">
-      <p><b>College</b><li>Pampanga State Agriculture University (BSIT)</li></p>
-      <p><b>Senior High School</b><li>Bloomingfields Academy Foundation.Inc (2024-2025) (STEM)</li></p>
-      <p><b>Junior High School</b><li>Bloomingfields Academy Foundation.Inc (2022-2023)</li></p>
-      <p><b>Elementary School</b><li>Bloomingfields Academy Foundation.Inc </li></p>
-    </ul>
+    <button class="signup">Sign Up</button>
   </div>
 
-  <h2 class="z">Work Experience or Seminars and Workshop Attended</h2>
-  <p class="text"> <b>Manager, Macaron Paradise, Magalang, Pampanga </b>
-    <br>2023
-    <br>
-    <br><b>Training, Drug Awareness, PSAU </b>
-    <br>November 31,2025</p>
-  
-  <h2 class="z">Hardware Skills</h2>
-  <p class="text">Internet troubleshooting, Physical installation, and Peripheral support </p>
-
-  <h2 class="z">Software Skills</h2>
-  <p class="text">Programming Java, Javascript, Html,Phyton,C++, 
-    Data management:Network security, and Operating System: Linux </p>
- 
-
-  <h2 class="z">Additional Skills</h2>
-  <ul class="text">
-    <li>Time Management</li>
-    <li>Multitasking</li>
-    <li>Positive Attidude</li>
-    <li>Patience</li>
-    <li>Continuous Learning</li><li>Creativity with hand crafts</li>
-  </ul>
-  
-  <h2 class="z">Character Reference</h2>
-  <div id="Table">
-    <table border="1px" width="100%" height="100%">
-      
-      <tr class="tabs">
-        <td>Name</td>
-        <td>Designation</td>
-        <td>Email</td>
-        <td>Contact Number</td>
-    </tr>
+  <div id="Ride">
+  <h2>REQUEST A RIDE NOW</h2>
+    <input type="text" placeholder="Enter pickup location" name="Name">
+    <input type="text" placeholder="Enter destination" name="Name">
+      <button class=RQ>Request now</button>
+      <button class=RQ1>Schedule for later</button>
     
-    <tr>
-      <td>Zia T. Olalia</td>
-      <td>ZSEERA VENUSTE</td>
-      <td>ziaolalia@gmail.com</td>
-     <td>099871838023</td>
-    </tr>
-
-    <tr>
-      <td>Joyce Ann Puno</td>
-      <td>DSWD</td>
-      <td>joycepuno@gmail.com</td>
-      <td>09994678436</td>
-    </tr>
-    
-    <tr>
-      <td>Jay Mendoza</td>
-      <td>McDo</td>
-      <td>jaycalma@gmail.com</td>
-      <td>09614179811</td>
-    </tr>
-   </table>
   </div>
-
-  <br>
-  <a href="#top"style="text-decoration: underline;">Go to Top   </a>
-  <p id="baba"></p>
 
   <br>
   <br>
   <br>
   <p>CODE</p>
-  <img src="codelab5.png" width="600px">
+  <img src="codelab6.png" width="600px">
 </body>
 </html>
