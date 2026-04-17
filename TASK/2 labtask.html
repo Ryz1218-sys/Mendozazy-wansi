@@ -42,27 +42,28 @@
         margin-bottom: 10px;
     }
 
-    .header,footer{
-        background-color: #E6E6FA;
-        height: 100px;
-    }
+    .header{height: 150px;}
+    .nav{height: 250px;}
+    .footer{height: 150px;}
 
     .nav{
         display:flex;
         flex-direction: row;
-        background-color: #CCCCFF;
-        list-style: none;
-        height: 200px;
         padding-top: 10px;
         padding-bottom: 10px;
+        border: 1px solid;
     }
-    
-    .li1{
-        width:550px;
+
+    .left{
         margin-right:10px;
+        border: 1px solid;
+        flex: 1;
     }
-    .li2{width: 1450px;}
-    
+
+    .right{
+        border: 1px solid;
+        flex:2;
+    }
 </style>
 
 <body>
@@ -90,19 +91,16 @@
         <div class="f4-item2" style="background-color: pink;">item2</div>
     </div>
    <h2>PART 2</h2>
-    <div class="header">This is header</div>
+    <div class="flex-container">
+        <div class="header" style="background-color:#E6E6FA;">This is a Header</div>
 
-    <div class="nav">
-        <li class="li1" style="background-color: #5A4FCF;">Section left-nav</li>
-        <li class="li2" style="background-color: #5A4FCF;" >Section left-nav</li>
+        <div class="nav" style="background-color:#CCCCFF;">
+            <div class="left" style="background-color:#5A4FCF;">Section left-nav</div>
+            <div class="right" style="background-color:#5A4FCF;">Section right-nav</div>
+        </div> 
+
+        <div class="footer" style="background-color:#E6E6FA;">This is a footer</div> 
     </div>
-
-    <div class="header">This is header</div>
-
-    
-
-
     
 </body>
-
 </html>
